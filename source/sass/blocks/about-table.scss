@@ -1,0 +1,239 @@
+.about-table {
+
+  img {
+    max-width: initial;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 29%;
+    grid-template-rows: auto auto auto;
+    padding-top: 20px;
+    padding-bottom: 200px;
+
+    @media (max-width: 1366px) {
+      grid-template-columns: 1fr 40%;
+    }
+
+    @include vp-1023 {
+      grid-template-columns: 1fr;
+      grid-row: auto;
+      row-gap: 40px;
+    }
+
+    @include vp-767 {
+      padding-top: 13px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 0;
+    }
+  }
+
+  &__left {
+    position: relative;
+    grid-row: 1/4;
+    margin-top: -85px;
+    margin-left: -42px;
+
+    @include vp-1023 {
+      grid-row: 3/4;
+    }
+
+    @media (max-width: 1725px) {
+      margin-left: -300px;
+    }
+
+    @media (max-width: 1366px) {
+      margin-left: -170px;
+    }
+
+    @include vp-1023 {
+      margin-bottom: 90px;
+    }
+
+    @include vp-767 {
+      margin-left: -112px;
+      order: 2;
+      margin-top: -90px;
+    }
+
+    img {
+      @media (max-width: 1366px) {
+        width: 900px;
+        height: 600px;
+      }
+
+      @include vp-767 {
+        width: 512px;
+        height: 335px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__buttons-list {
+    display: flex;
+    list-style: none;
+    margin-left: -73px;
+    padding-left: 34%;
+    margin-top: -469px;
+    min-height: 200px;
+    align-items: flex-end;
+
+    @media (max-width: 1366px) {
+      margin-top: -365px;
+      padding-left: 302px;
+      margin-left: -40px;
+    }
+
+    @include vp-767 {
+      margin-left: -22px;
+      margin-top: -297px;
+      padding-left: 172px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 73px;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    background: #A6FFFF;
+    border: none;
+    border-radius: 50%;
+
+    @media (max-width: 1366px) {
+      width: 130px;
+      height: 130px;
+      margin-left: 40px;
+    }
+
+    @include vp-767 {
+      width: 61px;
+      height: 61px;
+      margin-left: 22px;
+    }
+  }
+
+  &__button {
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    font-family: $ff-ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 68px;
+    color: #000000;
+    cursor: pointer;
+    transition: all $trans-default;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 21px;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__img-top {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: all $trans-default;
+  }
+
+  &__img-bottom {
+    position: relative;
+    margin-top: 63px;
+
+    @include vp-767 {
+      margin-top: 58px;
+    }
+  }
+
+  &__title {
+    width: 80%;
+    margin: 0;
+    margin-top: 58px;
+    margin-bottom: 40px;
+    margin-left: -218px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 62px;
+    line-height: 62px;
+    color: #0B64FE;
+
+    @media (max-width: 1500px) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 1366px) {
+      margin-left: -120px;
+    }
+
+    @include vp-1023 {
+      width: 100%;
+      margin-left: 0;
+      font-family: $ff-bebas-neue;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 38px;
+    }
+
+    @include vp-767 {
+      margin-top: 0;
+      width: 80%;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    width: 94%;
+    margin: 0;
+    margin-bottom: 35px;
+    margin-left: -218px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    font-family: $ff-ubuntu;
+    line-height: 37px;
+    color: #181818;
+
+    @media (max-width: 1366px) {
+      margin-left: -120px;
+    }
+
+    @include vp-1023 {
+      margin-left: 0;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  &__text:last-of-type {
+    order: 3;
+
+    @include vp-767 {
+      margin-top: 16px;
+    }
+  }
+
+}

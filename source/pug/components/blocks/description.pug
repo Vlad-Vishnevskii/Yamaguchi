@@ -1,0 +1,26 @@
+mixin description()
+  .description
+    .container
+      .description__container
+        .description__left
+          h1.description__title Yamaguchi
+          h2.description__title-small Voice Control
+          p.description__text Вы можете управлять программами массажа или самим креслом с помощью голосовых команд, приведённых ниже. Коснитесь кратковременно кнопки голосового управления, расположенной на левом подлокотнике, для запуска сеанса голосового управления.
+          p.description__text Произнесите одну из доступных команд. Если произнесённая команда распознана, вы услышите ответ и кресло приступит к выполнению запроса.
+          .description__slogan
+            p.description__slogan-text.description__slogan-text--top Скажи:
+            p.description__slogan-text
+              span.description__marks «
+              span Окей
+              span.description__marks ,
+              span.description__name Ямагучи
+              span.description__marks »
+        .description__center
+          .description__girl-container
+            .description__girl-img
+              +picture("content", "girl", "png", 435, 709, "Отверстие")
+          .description__hole-img
+            +picture("content", "black-hole", "png", 193, 61, "Отверстие")
+        .description__right
+          +picture("content", "interface", "png", 1092, 842, "Интерфейс")
+
