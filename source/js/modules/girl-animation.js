@@ -28,6 +28,9 @@ const girlAnimation = () => {
   };
 
   const girlFinishAnimation = () => {
+    girl.classList.remove('girl-top');
+    girl.classList.remove('girl-levitation-down');
+    girl.classList.remove('girl-levitation-top');
     girl.classList.add('girl-finish');
   };
 

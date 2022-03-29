@@ -10,7 +10,7 @@ const tableBtnHandler = () => {
       const btnBottom = evt.target.closest('.about-table__button--bottom');
       let top;
       if (btnTop) {
-        top = parseInt(imgTop.style.top);
+        top = parseInt(imgTop.style.top, 10);
         if (top > -20 && breakpointA.matches && breakpointB.matches) {
           imgTop.style.top = top - 10 + 'px';
         }
@@ -23,7 +23,7 @@ const tableBtnHandler = () => {
         }
       }
       if (btnBottom) {
-        top = parseInt(imgTop.style.top);
+        top = parseInt(imgTop.style.top, 10);
         if (top < 100 && breakpointA.matches) {
           imgTop.style.top = top + 10 + 'px';
         }

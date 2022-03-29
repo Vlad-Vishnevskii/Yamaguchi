@@ -8,7 +8,8 @@ mixin description()
           p.description__text Вы можете управлять программами массажа или самим креслом с помощью голосовых команд, приведённых ниже. Коснитесь кратковременно кнопки голосового управления, расположенной на левом подлокотнике, для запуска сеанса голосового управления.
           p.description__text Произнесите одну из доступных команд. Если произнесённая команда распознана, вы услышите ответ и кресло приступит к выполнению запроса.
           .description__slogan
-            p.description__slogan-text.description__slogan-text--top Скажи:
+            p.description__slogan-text.description__slogan-text--top Скажи
+              span.description__marks :
             p.description__slogan-text
               span.description__marks «
               span Окей
@@ -23,4 +24,12 @@ mixin description()
             +picture("content", "black-hole", "png", 193, 61, "Отверстие")
         .description__right
           +picture("content", "interface", "png", 1092, 842, "Интерфейс")
-
+        .description__slogan-mobile
+          p.description__slogan-text.description__slogan-text--top Скажи
+            span.description__marks.description__marks--small :
+          p.description__slogan-text.description__slogan-text--big-marks
+            span.description__marks «
+            span Окей
+            span.description__marks ,
+          span.description__name Ямагучи
+          span.description__marks »

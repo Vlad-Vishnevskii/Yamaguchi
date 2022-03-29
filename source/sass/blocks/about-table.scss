@@ -1,5 +1,4 @@
 .about-table {
-
   img {
     max-width: initial;
   }
@@ -101,7 +100,7 @@
     z-index: 10;
     width: 200px;
     height: 200px;
-    background: #A6FFFF;
+    background: #a6ffff;
     border: none;
     border-radius: 50%;
 
@@ -172,7 +171,7 @@
     font-weight: 300;
     font-size: 62px;
     line-height: 62px;
-    color: #0B64FE;
+    color: #0b64fe;
 
     @media (max-width: 1500px) {
       font-size: 42px;
@@ -235,5 +234,4 @@
       margin-top: 16px;
     }
   }
-
 }
